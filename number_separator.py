@@ -23,3 +23,6 @@ class NumberSeparator:
             for number in even_numbers:
                 even_numbers_file.write(str(number))
 
+        with open("/.odd_numbers.txt", "w") as odd_numbers_file:
+            for number in odd_numbers:
+                odd_numbers_file.write(str(number))
