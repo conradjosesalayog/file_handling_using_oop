@@ -21,8 +21,8 @@ class NumberSeparator:
 
         with open("even_numbers.txt", "w") as even_numbers_file:
             for number in even_numbers:
-                even_numbers_file.write(str(number))
+                even_numbers_file.write(str(number) + "\n" )
 
         with open("odd_numbers.txt", "w") as odd_numbers_file:
             for number in odd_numbers:
-                odd_numbers_file.write(str(number))
+                odd_numbers_file.write(str(number) + "\n")
