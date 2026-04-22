@@ -10,8 +10,11 @@ class NumberSeparator:
             with open(self.numbers_file, "r") as file:
                 numbers = file.read().split()
 
-
-
-
+            for number in numbers:
+                number = int(number)
+                if number % 2 == 0:
+                   even_numbers.append(number)
+                else:
+                   odd_numbers.append(number)
 
 
