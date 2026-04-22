@@ -19,4 +19,7 @@ class NumberSeparator:
         except:
             print("Error")
 
+        with open("/.even_numbers.txt", "w") as even_numbers_file:
+            for number in even_numbers:
+                even_numbers_file.write(str(number))
 
