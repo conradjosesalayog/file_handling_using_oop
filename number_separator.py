@@ -16,5 +16,7 @@ class NumberSeparator:
                    even_numbers.append(number)
                 else:
                    odd_numbers.append(number)
+        except:
+            print("Error")
 
 
