@@ -11,11 +11,15 @@ class StudentConfig:
         self.students = []
 
     def read_students(self):
-        with open(self.file_name, "r") as file:
-            for line in file:
-                name, gwa = line.split(",")
-                student = StudentGwa(name, float(gwa))
-                self.students.append(student)
+        try:
+            with open(self.file_name, "r") as file:
+                for line in file:
+                    name, gwa = line.split(",")
+                    student = StudentGwa(name, float(gwa))
+                    self.students.append(student)
+
+        except FileNotFoundError:
+            print("File not found")
 
     def top_student(self):
         top_student = self.students[0]
@@ -24,4 +28,3 @@ class StudentConfig:
                 top_student = student
 
         return top_student
-    
