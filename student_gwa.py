@@ -16,3 +16,12 @@ class StudentConfig:
                 name, gwa = line.split(",")
                 student = StudentGwa(name, float(gwa))
                 self.students.append(student)
+
+    def top_student(self):
+        top_student = self.students[0]
+        for student in self.students:
+            if student.gwa < top_student.gwa:  #The lower number of GWA (i.e 1.10, 1.20, etc), the higher the rank
+                top_student = student
+
+        return top_student
+    
