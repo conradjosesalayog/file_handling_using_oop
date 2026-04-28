@@ -6,7 +6,7 @@ class TextWriter:
             my_life = input("Enter your line:")
             lines.write(my_life + "\n")
 
-            response = int(input("Are there more lines? y/n"))
+            response = input("Are there more lines? y/n")
 
             if response.lower() != "y":
                 break
