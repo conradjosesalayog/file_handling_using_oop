@@ -12,7 +12,8 @@ class IntegerProcessor:
                     number = int(line.strip())
                     if number % 2 == 0:
                         even_square_file.write(f"{number ** 2}\n")
-                    
+                    else:
+                        odd_cube_file.write(f"{number ** 3}\n")
 
 
 
