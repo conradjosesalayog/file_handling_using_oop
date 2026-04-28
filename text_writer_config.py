@@ -1,3 +1,7 @@
 class TextWriter:
     def write_lines(self):
         lines = open("mylife.txt", "w")
+
+        while True:
+            my_life = input("Enter your line:")
+            lines.write(my_life + "\n")
