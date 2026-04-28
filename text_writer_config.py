@@ -5,3 +5,6 @@ class TextWriter:
         while True:
             my_life = input("Enter your line:")
             lines.write(my_life + "\n")
+
+            response = int(input("Are there more lines? y/n"))
+            if response.lower() != "y":
