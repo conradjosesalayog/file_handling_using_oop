@@ -15,5 +15,8 @@ class IntegerProcessor:
                     else:
                         odd_cube_file.write(f"{number ** 3}\n")
 
+                except ValueError:
+                    continue
+
 
 
