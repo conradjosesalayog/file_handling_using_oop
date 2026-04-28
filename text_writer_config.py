@@ -8,7 +8,7 @@ class TextWriter:
 
             response = int(input("Are there more lines? y/n"))
 
-            if response.lower() == "n":
+            if response.lower() == "y":
                 break
         lines.close()
         print("Saved to a file! Check mylife.txt")
