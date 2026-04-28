@@ -5,4 +5,5 @@ def main():
     processor.process()
     print("Check double.txt and triple.txt to see values of the updated integers")
 
-    
+if __name__ == "__main__":
+    main()
