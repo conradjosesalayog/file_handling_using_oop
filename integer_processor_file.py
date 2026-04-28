@@ -7,5 +7,12 @@ class IntegerProcessor:
              open("double.txt", "w") as even_square_file, \
              open("triple.txt", "w") as odd_cube_file:
 
+            for line in number_file:
+                try:
+                    number = int(line.strip())
+                    if number % 2 == 0:
+                        even_square_file.write(f"{number ** 2}\n")
+                    
+
 
 
