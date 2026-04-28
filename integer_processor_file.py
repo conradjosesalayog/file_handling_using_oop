@@ -17,6 +17,3 @@ class IntegerProcessor:
 
                 except ValueError:
                     continue
-
-
-
